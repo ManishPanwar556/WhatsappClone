@@ -56,7 +56,7 @@
     <Button
         android:id="@+id/register_button_register"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/register_button"
         android:text="Register"
@@ -102,12 +102,26 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/selectphoto_imageview_register"
-        app:civ_border_width="12dp"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        app:civ_border_width="12dp"
         app:layout_constraintBottom_toBottomOf="@+id/selectphoto_button_register"
         app:layout_constraintEnd_toEndOf="@+id/selectphoto_button_register"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/selectphoto_button_register"
-        app:layout_constraintTop_toTopOf="@+id/selectphoto_button_register" />
+        app:layout_constraintTop_toTopOf="@+id/selectphoto_button_register"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="invisible"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:indeterminate="false"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/already_have_account_text_view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
